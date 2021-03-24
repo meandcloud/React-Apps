@@ -32,6 +32,8 @@ jobs:
           node-version: 12
       - name: Install Surge
         run: npm install -g surge
+      - name: Install build
+        run: npm run build
       - name: Run Surge
         run: surge ./ sportworld.surge.sh --token ${{secrets.SURGE_TOKEN}}
 
