@@ -38,12 +38,6 @@
   "devDependencies": {
     "git-scripts": "^0.4.3",
     "surge": "^0.22.1"
-  },
-  "git": {
-    "scripts": {
-      "pre-push": "surge --project ./ --domain sportworld.surge.sh"
-}
-
   }
 }
 
