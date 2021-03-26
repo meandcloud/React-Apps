@@ -1,0 +1,12 @@
+.on{
+    background-color: yellow;
+    padding: 14px 16px;
+    color: red;
+}
+
+.off{
+    background-color: #333;
+    padding: 14px 16px;
+    color: #ddd;
+
+}
