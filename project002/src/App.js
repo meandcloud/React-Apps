@@ -2,6 +2,7 @@ import './App.css';
 import Age from './Components/Age';
 import AgeWithArrow from './Components/AgeWithArrow';
 import Room from './Components/Room'
+import RoomImp from './Components/RoomImp';
 
 function App() {
 
@@ -17,6 +18,10 @@ function App() {
       <br />
 
       <AgeWithArrow />
+
+      <br />
+
+      <RoomImp />
     </div>
   );
 }
