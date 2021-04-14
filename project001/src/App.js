@@ -1,26 +1,27 @@
 import './App.css';
 import Example1_Props from './Components/Example1_Props'
-import Example2_Hello from './Components/Example2_Hello'
+import CourseList from './Components/Example2_Obj/CourseList';
+
 
 function App() {
-
-  
 
 
   return (
     <div>
-        {/* Example 1 */}
-        {/* <Example1_Props fname="Amar" age="36" /> */}
-
-        {/* Example2 */}
-        <Example1_Props fname="Amar" age={36-6} />
-        
-        {/* <br />
-        <Example2_Hello firstName="Amar" /> */}
 
 
+        <div>
+          <Example1_Props 
+          roll={12345}
+          fname="Amar" 
+          lname="Shabbir"
+          course="Cloud Native and Mobile Computing"
+          email="amarsaudagar1@gmail.com"
+          age={40 - 4}
+          />
+        </div>
 
-
+        <CourseList />
 
     </div>
   );
