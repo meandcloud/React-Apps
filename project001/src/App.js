@@ -1,6 +1,7 @@
 import './App.css';
 import Example1_Props from './Components/Example1_Props'
 import CourseList from './Components/Example2_Obj/CourseList';
+import Products from './Components/Example2_Obj/Products';
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
         </div>
 
         <CourseList />
+
+
+        <Products />
 
     </div>
   );

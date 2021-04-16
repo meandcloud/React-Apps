@@ -5,8 +5,6 @@ function CourseList() {
     const [search, setSearch] = useState('');
 
     
-
-
     let courses = [
         {
             id: 101,
@@ -69,13 +67,6 @@ function CourseList() {
                             onChange={e => setSearch(e.target.value)}
                         />
 
-                        {/* <select class="form-control" onChange={e => setCost(e.target.value)}>
-                            <option>Select</option>
-                            <option value="high">High Price</option>
-                            <option value="low">Low Price</option>
-                            
-                        </select> */}
-
 
                         <table className="table table-bordered table-striped">
                             <thead>
@@ -105,9 +96,6 @@ function CourseList() {
                     </div>
                 </div>
             </div>
-
-
-
 
         </>
     )
