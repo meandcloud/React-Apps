@@ -3,21 +3,33 @@ import React, { useState } from 'react'
 
 function Room(){
 
-   const [isLit, setLit] = useState(false);
+    const [lit, setLit] = useState(false)
 
-   function updateLit(){
-       console.log("Button Click")
-       setLit(!isLit)
-   }
-    
+    const updateLit = () =>{
+        setLit(!lit)
+    }
 
     return(
         <>
-            The room is = {isLit ? "LIT" : "DARK"}
-
-            <br />
-
-            <button onClick={updateLit}>Toggle</button>
+     
+        <div className="container mt-5">
+            <div className="row">
+                <div className="col-md-4 mx-auto mt-5">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="main">
+                                <div className="sub">
+                                    <span className={`sub ${lit ? 'lit' : 'dark'} `} ></span>
+                                    <div className="card-body">
+                                        <button className="btn btn-primary toggle" onClick={updateLit}>Toggle</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 

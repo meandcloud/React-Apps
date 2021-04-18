@@ -2,22 +2,31 @@ import React, { useState } from 'react'
 
 function AgeWithArrow(){
 
-    let [age, setAge] = useState(11)
+    const [age, setAge] = useState(10)
 
-    // const updateAge = () =>{
-    //     setAge(++age)
-    // }
+    const updateAge = ()=>{
+        setAge(11)
+    }
+
+    const [status, setStatus] = useState('offline')
 
     return(
         <>
+            <div className="container mt-5">
+                <div className="row">
+                    <div className="col-md-10 mx-auto">
+                        <h1>I'm Using Arrow Function</h1>
+                        <h3 className="mt-5 mb-5">Creating Age and Status Program</h3>
 
-            <h1>My name is Sana and my age is {age} years</h1>
-            {/* <button onClick={updateAge}>Click</button> */}
+                        <h4>My name is Sana Sajjad and my age is {age} </h4>
+                        <button className="btn btn-primary" onClick={updateAge}>Update Age</button>
 
-            <button onClick={()=>{
-                console.log("increase")
-                setAge(++age)
-            }}>Increase</button>
+                        <h5 className="mt-5">My Status: {status}</h5>
+                        <button className="btn btn-dark" onClick={() => setStatus('Online')}>Log in</button>
+                    </div>
+                </div>
+            </div>
+       
         </>
     )
 }

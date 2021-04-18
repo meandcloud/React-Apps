@@ -1,6 +1,7 @@
 import './App.css';
 import Age from './Components/Age';
 import AgeWithArrow from './Components/AgeWithArrow';
+import Counter from './Components/Counter';
 import Room from './Components/Room'
 import RoomImp from './Components/RoomImp';
 
@@ -8,20 +9,24 @@ function App() {
 
   return (
     <div>
-      <h1>Hello Amar Shabbir</h1>
+      
       <Room />
 
-      <br />
+      <hr />
 
       <Age />
 
-      <br />
+      <hr />
 
       <AgeWithArrow />
 
-      <br />
+      <hr />
 
-      <RoomImp />
+      <Counter />
+
+      <hr />
+
+    
     </div>
   );
 }
